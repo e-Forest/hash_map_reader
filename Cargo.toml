@@ -1,5 +1,5 @@
 [package]
-name = "test_lib"
+name = "hash_map_reader"
 version = "0.1.0"
 edition = "2021"
 
