@@ -10,6 +10,7 @@ pub fn from_file(path: &str) -> Result<HashMap<String, String>, Box<dyn Error>> 
     let lines = binding.lines();
     //-- collect hashmap from file
     for line in lines {
+        println!("{}", line);
         match line.split_once(':') {
             Some((key, val)) => {
                 let key = key.trim().to_string();
