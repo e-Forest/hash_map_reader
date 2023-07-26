@@ -8,6 +8,7 @@ pub fn from_file(path: &str) -> Result<HashMap<String, String>, Box<dyn Error>> 
     let path = Path::new(path);
     let binding = fs::read_to_string(path)?;
     let lines = binding.lines();
+    println!("ich versuche es... ");
     //-- collect hashmap from file
     for line in lines {
         println!("{}", line);
